@@ -54,17 +54,15 @@ body {
 /*Cabeçalho============================================================================================*/
 header {
   /*colocar imagem*/
-  background-image: url(../imagens/fundo_teste04.jpg);
-  background-position: center bottom;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: white;
+  
 }
 
 
 
 /*Navegação===============================================================================*/
 nav {
-  min-height: 60px;
+  min-height: 63px;
   padding: 12px;
   box-shadow: 0px 7px 9px black;
 }
@@ -80,6 +78,7 @@ nav > div#img-logo img{
   max-width: 190px;
 }
 
+/*Analisar mais tarde(ta entrando em conflito com a div#link)*/
 nav > div#img-logo img:hover{
   cursor: pointer;
 }
@@ -102,7 +101,18 @@ nav > div#links a {
 
 /*fazer animação*/
 nav > div#links a:hover {
-  color: rgba(0, 0, 0, 0.66);
+  color: rgba(0, 0, 0, 0.506);
+}
+
+
+
+/*Div.imgfundo=========================================================================================*/
+div.imgfundo{
+  height: 98vh;
+  background-image: url(../imagens/fundo_teste04.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 
