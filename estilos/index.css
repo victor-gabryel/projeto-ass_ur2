@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+/*Fontes_Externas======================================================================================*/
+@font-face {
+  font-family: 'Bebas';
+  src: url('../fontes/BebasNeue-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Tiny";
+  src: url('../fontes/Tiny5-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+/*Raiz=================================================================================================*/
+:root{
+  --cor1:#DFF5EA;
+  --cor2:#7CFAE7;
+  --cor3:#7FE4FA;
+  --cor4:#19D2FA;
+  --cor5:#379AFA;
+  --cor6:#5F7DFA;
+
+  --fonte-padrao: Arial, Helvetica, sans-serif;
+  --fonte-bebas: 'Bebas';
+  --fonte-tiny: 'Tiny';
+}
+
+
+
+/*Configurações_Gerais=================================================================================*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: var(--fonte-padrao);
+}
+
+
+
+/*Principal============================================================================================*/
+
+main div#caixa-txt{
+    text-align: center;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+main div#caixa-txt p{
+    padding-bottom: 20px;
+    font-size: 1.2em;
+    font-family: var(--fonte-bebas);
+}
+
+main div#caixa-txt input{
+    font-family: var(--fonte-bebas);
+    background-color: orange;
+    border: 0px;
+    border-radius: 6px;
+    margin: 2px 8px 2px 8px;
+    font-size: 10pt;
+    padding: 3px 70px 3px 70px;
+}
+
+main div#caixa-txt input:hover {
+    cursor: pointer;
+}
+
+
+
+/*@media===============================================================================================*/
+@media (max-width: 600px) {
+    main div#caixa-txt p{ 
+        font-size: 0.7em;
+        padding-bottom: 10px;
+    }
+    main div#caixa-txt input {
+        font-size: 8px;
+        margin: 2px 2px 2px 2px;
+        padding: 3px 25px 3px 25px;
+    }
+}
+
+@media (max-width: 350px) {
+    main div#caixa-txt p{ 
+        font-size: 0.5em;
+        padding-bottom: 5px;
+    }
+    main div#caixa-txt input {
+        font-size: 5px;
+        margin: 1px 1px 1px 1px;
+        padding: 3px 25px 3px 25px;
+    }
+}

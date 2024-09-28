@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-/*Fontes_Externas=========================================================================*/
+/*Fontes_Externas======================================================================================*/
 @font-face {
   font-family: 'Bebas';
   src: url('../fontes/BebasNeue-Regular.ttf') format('truetype');
@@ -17,7 +17,7 @@
 
 
 
-/*Raiz====================================================================================*/
+/*Raiz=================================================================================================*/
 :root{
   --cor1:#DFF5EA;
   --cor2:#7CFAE7;
@@ -33,7 +33,7 @@
 
 
 
-/*Configurações_Gerais====================================================================*/
+/*Configurações_Gerais=================================================================================*/
 * {
   margin: 0px;
   padding: 0px;
@@ -43,10 +43,10 @@
 
 
 
-/*Div.main*/
+/*Div.main=============================================================================================*/
 div.main {
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -71,14 +71,17 @@ table td p {
     background-color: rgba(0, 0, 0, 0.2);
     color: black;
     font-size: 1.1em;
+    border-radius: 4px;
 }
 
-table td div#qrcode {
+/*Fazer animação*/
+table td div#qrcode:hover {
     
 }
 
 table td div#qrcode img {
-  max-width: 250px;  
+  max-width: 250px;
+  border-radius: 4px;
 }
 
 
@@ -92,4 +95,14 @@ table td div#qrcode img {
     table td div#qrcode img {
         max-width: 140px;  
     }
+}
+
+@media (max-width: 350px) {
+  table td p {
+      min-width: 140px;
+      font-size: 0.5em;
+  }
+  table td div#qrcode img {
+      max-width: 100px;  
+  }
 }

@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-/*Fontes_Externas=========================================================================*/
+/*Fontes_Externas======================================================================================*/
 @font-face {
   font-family: 'Bebas';
   src: url('../fontes/BebasNeue-Regular.ttf') format('truetype');
@@ -17,7 +17,7 @@
 
 
 
-/*Raiz====================================================================================*/
+/*Raiz=================================================================================================*/
 :root{
   --cor1:#DFF5EA;
   --cor2:#7CFAE7;
@@ -33,7 +33,7 @@
 
 
 
-/*Configurações_Gerais====================================================================*/
+/*Configurações_Gerais=================================================================================*/
 * {
   margin: 0px;
   padding: 0px;
@@ -43,18 +43,19 @@
 
 
 
-/*Corpo===================================================================================*/
+/*Corpo================================================================================================*/
 body {
-  background: linear-gradient(to left, #dff5ea63, #7fe3fa63);
+  background-color: gainsboro;
+  /* background: linear-gradient(to left, #dff5ea63, #7fe3fa63); */
   overflow-x: hidden;
   overflow-y: hidden;
 }
 
-/*Cabeçalho===============================================================================*/
+/*Cabeçalho============================================================================================*/
 header {
   /*colocar imagem*/
-  background-image: url(../imagens/fundo_teste02.jpg);
-  background-position: center center;
+  background-image: url(../imagens/fundo_teste04.jpg);
+  background-position: center bottom;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -83,13 +84,11 @@ nav > div#img-logo img:hover{
   cursor: pointer;
 }
 
-/*arrumar depois*/
 nav > div#links {
   position: relative;
   top: 1.5vh; 
   text-align: right;
 }
-
 
 nav > div#links a {
   font-family: Arial, Helvetica, sans-serif;
@@ -101,6 +100,7 @@ nav > div#links a {
   transition-duration: 0.5s;
 }
 
+/*fazer animação*/
 nav > div#links a:hover {
   color: rgba(0, 0, 0, 0.66);
 }
@@ -117,10 +117,27 @@ nav > div#links a:hover {
     max-width: 130px;
   }
   nav > div#links {
-    top: 0.5vh; 
+    top: 0vh; 
   }
   nav > div#links a {
     font-size: 6pt;
-    padding: 10px;
+    padding: 6px;
+  }
+}
+
+@media (max-width: 350px) {
+  nav {
+    max-height: 0px;
+    padding: 12px;
+  }
+  nav > div#img-logo img{
+    max-width: 90px;
+  }
+  nav > div#links {
+    top: -3.4vh; 
+  }
+  nav > div#links a {
+    font-size: 5pt;
+    padding: 3px;
   }
 }
