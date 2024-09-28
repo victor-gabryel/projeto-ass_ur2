@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+/*Fontes_Externas=========================================================================*/
+@font-face {
+  font-family: 'Bebas';
+  src: url('../fontes/BebasNeue-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Tiny";
+  src: url('../fontes/Tiny5-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+/*Raiz====================================================================================*/
+:root{
+  --cor1:#DFF5EA;
+  --cor2:#7CFAE7;
+  --cor3:#7FE4FA;
+  --cor4:#19D2FA;
+  --cor5:#379AFA;
+  --cor6:#5F7DFA;
+
+  --fonte-padrao: Arial, Helvetica, sans-serif;
+  --fonte-bebas: 'Bebas';
+  --fonte-tiny: 'Tiny';
+}
+
+
+
+/*Configurações_Gerais====================================================================*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: var(--fonte-padrao);
+}
+
+
+
+/*Corpo===================================================================================*/
+body {
+  background: linear-gradient(to left, #dff5ea63, #7fe3fa63);
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+/*Cabeçalho===============================================================================*/
+header {
+  /*colocar imagem*/
+  background-image: url(../imagens/fundo_teste02.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+
+/*Navegação===============================================================================*/
+nav {
+  min-height: 60px;
+  padding: 12px;
+  box-shadow: 0px 7px 9px black;
+}
+
+/*arrumar logo*/
+nav > div#img-logo{
+  position: fixed;
+  top: 0%;
+  text-align: left;
+}
+
+nav > div#img-logo img{
+  max-width: 190px;
+}
+
+nav > div#img-logo img:hover{
+  cursor: pointer;
+}
+
+/*arrumar depois*/
+nav > div#links {
+  position: relative;
+  top: 1.5vh; 
+  text-align: right;
+}
+
+
+nav > div#links a {
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition-duration: 0.5s;
+}
+
+nav > div#links a:hover {
+  color: rgba(0, 0, 0, 0.66);
+}
+
+
+
+/*@media===============================================================================================*/
+@media (max-width: 600px) {
+  nav {
+    min-height: 30px;
+    padding: 12px;
+  }
+  nav > div#img-logo img{
+    max-width: 130px;
+  }
+  nav > div#links {
+    top: 0.5vh; 
+  }
+  nav > div#links a {
+    font-size: 6pt;
+    padding: 10px;
+  }
+}

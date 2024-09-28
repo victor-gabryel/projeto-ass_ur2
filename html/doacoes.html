@@ -1,93 +1,63 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
-    <link rel="shortcut icon" href="##" type="##">
-    <link rel="stylesheet" href="../estilos/doacoes.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="shortcut icon" href="" type="">
+  <link rel="stylesheet" href="../estilos/header.css">
+  <link rel="stylesheet" href="../estilos/doacoes.css">
 </head>
+
 <!--corpo-->
 <body>
 
-     <!--Cabeçalho-->
-     <header>
-        <nav>
+  <!--ABRIMENTO DO HEADER-->
+  <!--cabecalho-->
+  <header>
+    <!--navegacao-->
+    <nav>
+      <!--div da imagem da logo-->
+      <div id="img-logo">
+        <a href="https://maps.app.goo.gl/NmmzwQ6JBubaq1nn6" target="_blank"><img src="../imagens/logo.png" alt="logo"></a>
+      </div>
 
-          <a class="logo" href="/">QTC CODES</a>
+      <div id="links">
+        <!--link inicio-->
+        <a href="../index.html">Início</a>
+        <!--link historia-->
+        <a href="">História</a>
+        <!--link atividades-->
+        <a href="">Atividades</a>
+        <!--link doacoes-->
+        <a href="doacoes.html">Doações</a>
+      </div>
+    </nav>
+  </header>
+  <!--FECHAMENTO DO HEADER-->
 
-          <div class="mobile-menu">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
+
+
+  <div class="main">
+    <!--tabela-->
+    <table>
+
+        <td>
+          <p>
+            Voçê pode fazer parte dessa companha, ajudando com uma quantia que não vai fazer te falta no seu dia a dia, com sua ajuda podemos abranger cada vez mais lugares na comunidade, contruibundo com donativos para aqueles que realmente precisam!
+            <br> <br> 
+            Clique ou Escaneie o Qrcode ao lado para fazer sua Doação!
+          </p>
+        </td>
+
+        <td>
+          <div id="qrcode">
+            <img src="../imagens/qrcode_teste.png" alt="qrcode">
           </div>
+        </td>
 
-          <ul class="nav-list">
+    </table>
+  </div>
 
-            <!--Home-->
-            <li class="dropdown-hom">
-              <a href="../index.html">Inicío</a>
-            </li>
-
-            <!--Historia-->
-            <li class="dropdown-his">
-              <a href="historia.html">Hisória</a>
-            </li>
-
-            <!--Atividades-->
-            <li class="dropdown-ati">
-              <a href="atividades.html">Atividades</a>
-            </li>
-  
-            <!--Instagram-->
-            <li class="dropdown-ins">
-              <a href="#">Instagram</a>
-            </li>
-  
-            <!--Doacoes-->
-            <li class="dropdown-doa">
-              <a href="doacoes.html">Doações</a>
-            </li>
-  
-          </ul>
-        </nav>
-      </header>
-
-      <!--Principal-->
-      <main>
-          <!--div qrcode e fundo transparente-->
-          <div id="qrcodeefundo">
-            <!--div fundo transparente-->
-            <div  id="qrcodetransparente">
-            </div>
-            <div id="qrcode">
-              <table>
-                <th>
-                  <div id="p">
-                    <p>
-                        Ajude com uma quantia que não <br>
-                        vai fazer falta, escaneie ou <br>
-                        clique no QrCode a baixo, para <br>
-                        voçê possa ser redirecionado <br>
-                        para a nossa vaquinha online <br>
-                        da Associção! <br>
-                    </p>
-                  </div>
-                </th>
-                <th>
-                  <div id="img">
-                    <a href="https://www.youtube.com/watch?v=WL5eFEKUcPQ&list=RDprNwKbJNL2g&index=2"             target="_blank">
-                        <img src="../imagens/qrcode_teste.png"
-                        alt="qrcode">
-                    </a>
-                  </div>
-                </th>
-              </table>
-            </div>
-          </div>
-      </main>
-      
-      <!--Script-->
-      <script src="../scripts/index.js"></script>
 </body>
 </html>
